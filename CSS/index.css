@@ -8,16 +8,19 @@
 .logo{
     width: 23%;
     padding: 1%;
+    
 }
 
 nav{
-    width: inherit;
-    padding: 20px;
+    width: 73%;
+    padding: 1%;
+    
 }
 nav, ul{
     width: 50%;
-    margin-left: 100px;
+    margin-left: auto;
     font-family: 'Chivo', sans-serif;
+    text-align: center;
 }
 
 .heroImg{
@@ -47,13 +50,17 @@ header {
 h1 {
     font-family: 'Chivo', sans-serif;
     font-weight: bold;
-    padding: auto;
-    font-size: larger;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    
+
+    
 }
 h2{
     font-family: 'Chivo', sans-serif;
     font-weight: bold;
-    padding: auto;
+    padding: 1px;
     font-size:large;
 
 }
@@ -74,14 +81,14 @@ il, p{
 button{
     color: rgb(196, 94, 111);
     font-weight:bold;
-    background-color: #FBE5DB;
+    background-color: #F4C5B0; 
     padding: 10px;
     box-shadow: 5px 5px #f3be8c;
 }
 /* Row Style, Projects section */
 
 .text {
-    background: rgba(209, 125, 86, 0.808);
+    background:  rgba(212, 125, 98, 0.76);
     width: 100%;
     padding: 20px 40px;
     color: white;
@@ -132,4 +139,14 @@ button{
     background-image: url("../image/FFR.png");
     background-repeat: no-repeat;
     background-position: center;
+}
+
+/* My Skills section coded using CSS flex*/
+.flexContainer{
+    display: flex;
+    width: 33%;
+    flex-direction: row;
+    align-items:baseline;
+    margin: auto;
+    margin-left: 20%;
 }
