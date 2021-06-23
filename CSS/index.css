@@ -11,11 +11,6 @@
     
 }
 
-nav{
-    width: 73%;
-    padding: 1%;
-    
-}
 nav, ul{
     width: 50%;
     margin-left: auto;
@@ -25,7 +20,7 @@ nav, ul{
 
 .heroImg{
  height: 800px;
- padding: 25px;
+ padding: 20px;
 }
 
 .content{
@@ -62,18 +57,21 @@ h2{
     font-weight: bold;
     padding: 1px;
     font-size:large;
-
+}
+h3{
+    font-family: 'Chivo', sans-serif;
+    font-weight: bold;
 }
 
-ul{
+ul li{
     display: inline-block;
     vertical-align:top;
     padding: center;
-    font-family: 'Chivo';
+    font-family: 'Chivo', sans-serif;
   
 }
 
-il, p{
+li, p{
     padding: 10px;
     font-family: 'Chivo', sans-serif;
 }
@@ -85,16 +83,20 @@ button{
     padding: 10px;
     box-shadow: 5px 5px #f3be8c;
 }
-/* Row Style, Projects section */
+/* Row Style using Flex, Projects section */
 
 .text {
     background:  rgba(212, 125, 98, 0.76);
     width: 100%;
-    padding: 20px 40px;
+    height: inherit;
+    max-height: 45%;
+    padding: 10px 40px;
     color: white;
+    
     font-family: 'Chivo', sans-serif;
     border-radius: 2%;
 }
+
 
 .row{
     display: flex;
@@ -102,8 +104,9 @@ button{
     height: 500px;
     width: 1000px;
     flex-direction: row;
-    margin: 0 auto;
-    margin-top: 20px;
+    margin: auto;
+    margin-top: 5px;
+    padding: 20px;
 }
 /* put other project name with this group */
 
@@ -113,7 +116,6 @@ button{
     display: flex;
     align-items: flex-end;
     margin-right: 20px;
-    
     background-size: cover;
     cursor: pointer;
     border-radius: 5%;
@@ -146,7 +148,31 @@ button{
     display: flex;
     width: 33%;
     flex-direction: row;
-    align-items:baseline;
+    align-content:space-between;
+    padding:20;
     margin: auto;
     margin-left: 20%;
+}
+
+@media only screen and (max-width:600px){
+    .flexContainer{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-content:space-between;
+        padding:20;
+        margin: auto;
+        margin-left: 20%;
+    }
+    .row{
+        display: flex;
+        align-items: center;
+        height: 500px;
+        width: 100%;
+        flex-direction: column;
+        margin: auto;
+        margin-top: 5px;
+        padding: 20px;
+    }
+
 }
